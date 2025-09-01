@@ -89,8 +89,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- Project Link: [https://github.com/yourusername/examination-system-project](https://github.com/yourusername/examination-system-project)
-- Email: your.email@example.com
+- Project Link: (https://github.com/RofaidaElwany/examination-system-project)
+- Email: rofaidaelwany3@gmail.com
 
 ---
 
