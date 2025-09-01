@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App with Marked Questions</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Main layout: Sidebar + Quiz -->
+    <div class="quiz-container">
+      <!-- Left Sidebar for marked questions -->
+      <div class="sidebar">
+        <h2>Marked Questions</h2>
+        <ul id="markedList" class="marked-list"></ul>
+      </div>
+      <!-- Quiz area -->
+      <div class="quiz-area">
+        <!-- Countdown Timer with Progress Bar -->
+        <div class="timer-container">
+          <div id="timer" class="timer-text">Loading timer...</div>
+          <div class="progress-bar-container">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz">
+          <!-- Question text -->
+          <div id="question-number" class="question-number"></div>
+          <div id="question-text" class="question-text"></div>
+
+          <!-- Answer choices -->
+          <div id="choices" class="choices-container"></div>
+
+          <!-- Navigation and Mark -->
+          <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-button prev-button">
+              Previous
+            </button>
+            <button id="markBtn" class="nav-button mark-button">Mark</button>
+            <button id="nextBtn" class="nav-button next-button">Next</button>
+          </div>
+
+          <!-- Submit -->
+          <div class="submit-container">
+            <button id="submitBtn" class="submit-button">Submit</button>
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div id="result" class="result-box"></div>
+      </div>
+    </div>
+
+    <!-- Audio for timeout -->
+    <audio
+      id="timeoutSound"
+      src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="form.js"></script>
+  </body>
+</html>

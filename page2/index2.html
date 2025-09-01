@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgin in</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <!-- first section -->
+            <img src="../photo/Screenshot 2025-05-29 073024.png" alt="">
+            <h1>Log in to your account</h1>
+            <p class="pargraph">Welcome back! Please enter your details.</p>
+            <!-- Start Form -->
+            <form id="form">
+                <!-- first input -->
+            <label for="email" id="mail">Email</label> 
+            <input type="email" name="" id="email" placeholder="Enter your email"><br>
+                <!-- second input -->
+            <label for="password" id="password">Password</label>
+           <div class="icon">
+            <input type="password" name="" id="pass" placeholder="Enter your password">
+            <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+           </div><br>
+                <!-- button -->
+            <button class="signIn">Sign in</button> <br>
+            
+            </form>
+            <p id="signUp">Don't have an account? <a href="../page1/index.html">Sing up</a></p>
+        </div>
+    </div>
+<!-- Links For Script -->
+    <script src="../js/all.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="mainP2.js"></script>
+</body>
+</html>

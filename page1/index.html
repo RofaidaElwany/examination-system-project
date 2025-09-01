@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgin up</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+    <div class="container-Parent">
+        <div class="container-Header">
+            <img src="../photo/Screenshot 2025-05-29 073024.png" alt="">
+            <h1>Create an account </h1>
+            <p class="p-header">Start your journey</p>
+            <!-- Start Form -->
+            <form id="form">
+                <!-- First input -->
+                <label for="name">First Name</label> <br>
+                <input type="text" placeholder="Enter Your First Name" id="name"> <br>
+                <!-- Second input -->
+                <label for="" id="">Last Name</label> <br>
+                <input type="text" placeholder="Enter Your Last Name" id="last-Name"> <br>
+                <!-- third input -->
+                <label for="email"  >Email</label> <br>
+                <input type="email" id="Email" placeholder="Enter Your Email " name="" > <br>
+                <!-- Fourth input -->
+                <small id="emailError" style="color: red; display: none;">Please enter a valid email address</small>
+                <!-- password input and icon show password -->
+                <label for="password" >Password</label> <br>
+                <div class="iconPw">
+                <input type="password" id="pass" placeholder="Password">
+                <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+                </div><br>
+                <!-- Re Enter password input and icon show password -->
+                <label for="re-Enter password">Re-enter password</label> <br>
+                <div class="iconRePw">
+                <input type="password" id="repass" placeholder="Password">
+                <i class="fa-solid fa-eye toggle-password" id="togglePasswordRe"></i>
+                </div><br>
+                <!-- button Login -->
+                <button id="log-in">Get started</button> <br>
+                <p id="signUp">Already have an account? <a href="../page2/index2.html">log in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../js/all.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src ="index.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
